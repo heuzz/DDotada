@@ -1,2 +1,4 @@
 rootProject.name = "DDotada"
 include ':app'
+include ':app:myapplication'
+include ':app:myapplication2'
