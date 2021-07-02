@@ -218,10 +218,8 @@
         android:layout_width="101dp"
         android:layout_height="29dp"
         android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
         android:layout_marginTop="27dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
         android:text="이용 내역"
         android:textColor="#000000"
@@ -229,10 +227,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btn_Usage_History"
         app:layout_constraintEnd_toEndOf="@+id/btn_Usage_History"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="@+id/btn_Usage_History"
         app:layout_constraintTop_toTopOf="@+id/btn_Usage_History"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/text_my_bicycle"
