@@ -10,10 +10,8 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginRight="130dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,12 +23,10 @@
     <ImageButton
         android:id="@+id/btn_Change_Profile"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,12 +55,10 @@
     <ImageButton
         android:id="@+id/btn_show_nickname"
         android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="130dp"
-        android:layout_marginRight="130dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,12 +87,10 @@
     <ImageButton
         android:id="@+id/btn_my_page"
         android:layout_width="150dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,11 +190,7 @@
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="15dp"
         android:text="닉네임"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -210,17 +198,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_show_nickname"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_show_nickname"
-        app:layout_constraintTop_toTopOf="@+id/btn_show_nickname"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/btn_show_nickname" />
 
     <TextView
         android:id="@+id/text_Usage_History"
         android:layout_width="101dp"
         android:layout_height="29dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="27dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="15dp"
         android:text="이용 내역"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -229,8 +214,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Usage_History"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="@+id/btn_Usage_History"
-        app:layout_constraintTop_toTopOf="@+id/btn_Usage_History"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Usage_History" />
 
     <TextView
         android:id="@+id/text_my_bicycle"
@@ -256,9 +240,7 @@
         android:layout_width="60dp"
         android:layout_height="22dp"
         android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:gravity="center"
         android:text="프로필변경"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -267,8 +249,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Change_Profile"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_Change_Profile"
-        app:layout_constraintTop_toTopOf="@+id/btn_Change_Profile"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Change_Profile" />
 
     <TextView
         android:id="@+id/text_Share_History"
@@ -353,11 +334,7 @@
         android:layout_width="99dp"
         android:layout_height="36dp"
         android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="20dp"
         android:text="MY PAGE"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -366,8 +343,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_my_page"
         app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="@+id/btn_my_page"
-        app:layout_constraintTop_toTopOf="@+id/btn_my_page"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/btn_my_page" />
 
     <TextView
         android:id="@+id/text_Setting"
