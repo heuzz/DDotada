@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#C1B8B8">
 
     <ImageButton
         android:id="@+id/btn_Profile_lmage"
@@ -38,12 +39,10 @@
     <ImageButton
         android:id="@+id/btn_Registered_Account"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,12 +119,10 @@
     <ImageButton
         android:id="@+id/btn_Share_History"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,12 +134,10 @@
     <ImageButton
         android:id="@+id/btn_my_bicycle"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,12 +166,10 @@
     <ImageButton
         android:id="@+id/btn_History_of_use"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="30dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
@@ -221,11 +214,8 @@
         android:layout_width="60dp"
         android:layout_height="22dp"
         android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="17dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="10dp"
+        android:gravity="center"
         android:text="내 자전거 등록"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -256,11 +246,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="15dp"
         android:text="공유 내역"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -268,19 +254,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Share_History"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_Share_History"
-        app:layout_constraintTop_toTopOf="@+id/btn_Share_History"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Share_History" />
 
     <TextView
         android:id="@+id/text_History_of_use"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="15dp"
         android:text="사용 내역"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -288,19 +269,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_History_of_use"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_History_of_use"
-        app:layout_constraintTop_toTopOf="@+id/btn_History_of_use"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="@+id/btn_History_of_use" />
 
     <TextView
         android:id="@+id/text_Sign_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="20dp"
         android:text="로그아웃"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -308,17 +284,14 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Sign_out"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_Sign_out"
-        app:layout_constraintTop_toTopOf="@+id/btn_Sign_out"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Sign_out" />
 
     <TextView
         android:id="@+id/text_Registered_Account"
         android:layout_width="60dp"
         android:layout_height="22dp"
         android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
+        android:gravity="center"
         android:text="등록 계좌"
         android:textColor="#000000"
         android:textSize="10sp"
@@ -326,8 +299,7 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Registered_Account"
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="@+id/btn_Registered_Account"
-        app:layout_constraintTop_toTopOf="@+id/btn_Registered_Account"
-        app:layout_constraintVertical_bias="0.75" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Registered_Account" />
 
     <TextView
         android:id="@+id/text_my_page"
@@ -350,11 +322,7 @@
         android:layout_width="62dp"
         android:layout_height="26dp"
         android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
         android:text="설정"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -363,7 +331,6 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_Setting"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_Setting"
-        app:layout_constraintTop_toTopOf="@+id/btn_Setting"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintTop_toTopOf="@+id/btn_Setting" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
