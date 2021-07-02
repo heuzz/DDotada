@@ -1,0 +1,2 @@
+rootProject.name = "DDotada"
+include ':app'
