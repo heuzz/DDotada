@@ -33,8 +33,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_my_page"
-        app:srcCompat="@drawable/btn_Change_Profile" />
+        app:layout_constraintTop_toBottomOf="@+id/my_page"
+        app:srcCompat="@drawable/Change_Profile" />
 
     <ImageButton
         android:id="@+id/btn_Registered_Account"
@@ -52,7 +52,7 @@
         app:srcCompat="@drawable/btn_Registered_Account" />
 
     <ImageButton
-        android:id="@+id/btn_show_nickname"
+        android:id="@+id/show_nickname"
         android:layout_width="130dp"
         android:layout_height="30dp"
         android:layout_marginStart="100dp"
@@ -64,10 +64,10 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Profile_lmage"
-        app:srcCompat="@drawable/btn_show_nickname" />
+        app:srcCompat="@drawable/show_nickname" />
 
     <ImageButton
-        android:id="@+id/btn_Usage_History"
+        android:id="@+id/Usage_History"
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginStart="110dp"
@@ -84,7 +84,7 @@
         app:srcCompat="@drawable/btn_Usage_History" />
 
     <ImageButton
-        android:id="@+id/btn_my_page"
+        android:id="@+id/my_page"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginStart="110dp"
@@ -95,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_show_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/show_nickname"
         app:srcCompat="@drawable/btn_my_page" />
 
     <ImageButton
@@ -128,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Usage_History"
+        app:layout_constraintTop_toBottomOf="@+id/Usage_History"
         app:srcCompat="@drawable/btn_Share_History" />
 
     <ImageButton
@@ -187,11 +187,11 @@
         android:text="닉네임"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_show_nickname"
-        app:layout_constraintEnd_toEndOf="@+id/btn_show_nickname"
+        app:layout_constraintBottom_toBottomOf="@+id/show_nickname"
+        app:layout_constraintEnd_toEndOf="@+id/show_nickname"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_show_nickname"
-        app:layout_constraintTop_toTopOf="@+id/btn_show_nickname" />
+        app:layout_constraintStart_toStartOf="@+id/show_nickname"
+        app:layout_constraintTop_toTopOf="@+id/show_nickname" />
 
     <TextView
         android:id="@+id/text_Usage_History"
@@ -203,11 +203,11 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_Usage_History"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Usage_History"
+        app:layout_constraintBottom_toBottomOf="@+id/Usage_History"
+        app:layout_constraintEnd_toEndOf="@+id/Usage_History"
         app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="@+id/btn_Usage_History"
-        app:layout_constraintTop_toTopOf="@+id/btn_Usage_History" />
+        app:layout_constraintStart_toStartOf="@+id/Usage_History"
+        app:layout_constraintTop_toTopOf="@+id/Usage_History" />
 
     <TextView
         android:id="@+id/text_my_bicycle"
@@ -311,11 +311,11 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_my_page"
-        app:layout_constraintEnd_toEndOf="@+id/btn_my_page"
+        app:layout_constraintBottom_toBottomOf="@+id/my_page"
+        app:layout_constraintEnd_toEndOf="@+id/my_page"
         app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="@+id/btn_my_page"
-        app:layout_constraintTop_toTopOf="@+id/btn_my_page" />
+        app:layout_constraintStart_toStartOf="@+id/my_page"
+        app:layout_constraintTop_toTopOf="@+id/my_page" />
 
     <TextView
         android:id="@+id/text_Setting"
