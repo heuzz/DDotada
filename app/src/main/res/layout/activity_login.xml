@@ -118,7 +118,7 @@
         app:srcCompat="@drawable/btn_login" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btn_signup"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
