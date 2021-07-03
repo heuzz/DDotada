@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
-        <activity android:name=".SingupActivity" />
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".menuscreen_activity">
+        <activity android:name=".SingupActivity"></activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuscreenActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
     </application>
 

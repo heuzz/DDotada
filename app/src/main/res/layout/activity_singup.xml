@@ -10,7 +10,8 @@
         android:layout_height="6dp"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="87dp">
-            <ImageView
+
+        <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="250dp"
@@ -18,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Profile_Image" />
+        app:srcCompat="@drawable/profile_image" />
 
         <ImageButton
         android:id="@+id/btn_change_profile_image"
@@ -30,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/btn_Change_Profile_Image" />
+        app:srcCompat="@drawable/btn_profile_image_change" />
 
         <TextView
         android:id="@+id/textView"
@@ -52,7 +53,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:srcCompat="@drawable/Enter_Nickname" />
+                app:srcCompat="@drawable/enter_nickname" />
 
             <TextView
                 android:id="@+id/text_enter_nickname"
@@ -118,7 +119,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/id_input"
-                app:srcCompat="@drawable/PW_Input" />
+                app:srcCompat="@drawable/pw_input" />
 
             <TextView
         android:id="@+id/text_pw_input"
@@ -162,7 +163,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pw_input"
-                app:srcCompat="@drawable/PW_Enter_Input" />
+                app:srcCompat="@drawable/pw_enter_input" />
 
             <TextView
                 android:id="@+id/text_pw_enter_input"
@@ -184,7 +185,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/pw_enter_input"
-                app:srcCompat="@drawable/Agree_Terms" />
+                app:srcCompat="@drawable/agree_terms" />
 
             <TextView
                 android:id="@+id/text_agree_terms"
