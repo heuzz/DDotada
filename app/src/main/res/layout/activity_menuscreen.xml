@@ -7,19 +7,21 @@
     android:background="#C1B8B8">
 
     <ImageButton
-        android:id="@+id/btn_Profile_lmage"
+        android:id="@+id/profile_image"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="130dp"
         android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_Profile_Image" />
+        app:srcCompat="@drawable/profile_image_menu"
+        tools:srcCompat="@drawable/profile_image_menu" />
 
     <ImageButton
         android:id="@+id/btn_Change_Profile"
@@ -34,10 +36,10 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_page"
-        app:srcCompat="@drawable/Change_Profile" />
+        app:srcCompat="@drawable/btn_chage_profile" />
 
     <ImageButton
-        android:id="@+id/btn_Registered_Account"
+        android:id="@+id/btn_registered_account"
         android:layout_width="100dp"
         android:layout_height="30dp"
         android:layout_marginStart="140dp"
@@ -49,7 +51,8 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_my_bicycle"
-        app:srcCompat="@drawable/btn_Registered_Account" />
+        app:srcCompat="@drawable/btn_registered_account"
+        tools:srcCompat="@drawable/btn_registered_account" />
 
     <ImageButton
         android:id="@+id/show_nickname"
@@ -63,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Profile_lmage"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
         app:srcCompat="@drawable/show_nickname" />
 
     <ImageButton
@@ -71,17 +74,15 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
         android:background="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Registered_Account"
-        app:srcCompat="@drawable/btn_Usage_History" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_registered_account"
+        app:srcCompat="@drawable/usage_history" />
 
     <ImageButton
         android:id="@+id/my_page"
@@ -103,10 +104,8 @@
         android:layout_width="130dp"
         android:layout_height="40dp"
         android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:adjustViewBounds="false"
         android:background="#00FFFFFF"
         android:scaleType="centerCrop"
@@ -114,7 +113,7 @@
         app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_History_of_use"
-        app:srcCompat="@drawable/btn_Setting" />
+        app:srcCompat="@drawable/btn_setting" />
 
     <ImageButton
         android:id="@+id/btn_Share_History"
@@ -129,7 +128,7 @@
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Usage_History"
-        app:srcCompat="@drawable/btn_Share_History" />
+        app:srcCompat="@drawable/btn_share_history" />
 
     <ImageButton
         android:id="@+id/btn_my_bicycle"
@@ -147,23 +146,6 @@
         app:srcCompat="@drawable/btn_my_bicycle" />
 
     <ImageButton
-        android:id="@+id/btn_Sign_out"
-        android:layout_width="130dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Setting"
-        app:srcCompat="@drawable/btn_Sign_out" />
-
-    <ImageButton
         android:id="@+id/btn_History_of_use"
         android:layout_width="100dp"
         android:layout_height="30dp"
@@ -176,7 +158,7 @@
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Share_History"
-        app:srcCompat="@drawable/btn_History_of_use" />
+        app:srcCompat="@drawable/btn_history_of_use" />
 
     <TextView
         android:id="@+id/text_show_nickname"
@@ -272,21 +254,6 @@
         app:layout_constraintTop_toTopOf="@+id/btn_History_of_use" />
 
     <TextView
-        android:id="@+id/text_Sign_out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="10dp"
-        android:text="로그아웃"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_Sign_out"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Sign_out"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_Sign_out"
-        app:layout_constraintTop_toTopOf="@+id/btn_Sign_out" />
-
-    <TextView
         android:id="@+id/text_Registered_Account"
         android:layout_width="60dp"
         android:layout_height="22dp"
@@ -295,11 +262,11 @@
         android:text="등록 계좌"
         android:textColor="#000000"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_Registered_Account"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Registered_Account"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_registered_account"
+        app:layout_constraintEnd_toEndOf="@+id/btn_registered_account"
         app:layout_constraintHorizontal_bias="0.937"
-        app:layout_constraintStart_toStartOf="@+id/btn_Registered_Account"
-        app:layout_constraintTop_toTopOf="@+id/btn_Registered_Account" />
+        app:layout_constraintStart_toStartOf="@+id/btn_registered_account"
+        app:layout_constraintTop_toTopOf="@+id/btn_registered_account" />
 
     <TextView
         android:id="@+id/text_my_page"
@@ -332,5 +299,34 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_Setting"
         app:layout_constraintTop_toTopOf="@+id/btn_Setting" />
+
+    <ImageButton
+        android:id="@+id/btn_sign_out"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Setting"
+        app:srcCompat="@drawable/btn_sign_out" />
+
+    <TextView
+        android:id="@+id/text_Sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="10dp"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_sign_out"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sign_out"
+        app:layout_constraintStart_toStartOf="@+id/btn_sign_out"
+        app:layout_constraintTop_toTopOf="@+id/btn_sign_out" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
