@@ -41,7 +41,7 @@ class SingupActivity : AppCompatActivity() {
             phone = edit_phone.text.toString()
             password = edit_password.text.toString()
             passwordcheck = edit_passwordcheck.text.toString()
-            if(nickname == null || name == null || phone == null || password == null || password != passwordcheck){
+            if(nickname == "" || name == "" || phone == "" || password == "" || password != passwordcheck){
                 error = 1
             }
             else{
@@ -49,17 +49,16 @@ class SingupActivity : AppCompatActivity() {
             }
             if(error == 1) {
                 when {
-                    nickname == null -> {
+                    nickname == "" -> {
                         Toast.makeText(this, "닉네임을 작성하지 않았습니다.",Toast.LENGTH_SHORT).show()
-
                     }
-                    name == null -> {
+                    name == "" -> {
                         Toast.makeText(this,"이름을 작성하지 않았습니다.",Toast.LENGTH_SHORT).show()
                     }
-                    phone == null -> {
+                    phone == "" -> {
                         Toast.makeText(this,"전화번호를 작성하지 않았습니다.",Toast.LENGTH_SHORT).show()
                     }
-                    password == null -> {
+                    password == "" -> {
                         Toast.makeText(this,"비밀번호를 작성하지 않았습니다.",Toast.LENGTH_SHORT).show()
                     }
                     password != passwordcheck -> {
@@ -74,8 +73,6 @@ class SingupActivity : AppCompatActivity() {
             }
 
         }
-
-
 
     }
 
