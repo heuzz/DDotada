@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DatabaseReference
@@ -28,6 +29,7 @@ class SingupActivity : AppCompatActivity() {
         val edit_passwordcheck = findViewById<EditText>(R.id.edit_passwordcheck)
         val btn_change_profile = findViewById<ImageButton>(R.id.btn_change_profile_image)
         val btn_signup2 = findViewById<ImageButton>(R.id.btn_signup2)
+        val profileimage = findViewById<ImageView>(R.id.profileView)
 
         var nickname:String? = null
         var name:String? = null
@@ -36,9 +38,11 @@ class SingupActivity : AppCompatActivity() {
         var passwordcheck:String? = null
         var id:String? = null
         var error : Int = 0
-
+        val OPEN_GALLERY = 1
         btn_change_profile.setOnClickListener {
-
+            val intent: Intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.setType("image/*")
+            startActivityForResult(intent, OPEN_GALLERY)
         }
 
         btn_signup2.setOnClickListener {
