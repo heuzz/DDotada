@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "816786475993",
+    "firebase_url": "https://ddotada-a8df9-default-rtdb.firebaseio.com",
+    "project_id": "ddotada-a8df9",
+    "storage_bucket": "ddotada-a8df9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816786475993:android:3d85acaae871185d14a7c8",
+        "android_client_info": {
+          "package_name": "com.example.ddotada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816786475993-kk1mtesh93lstuhefc6mfko953fn038k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAI5y1z8aon3lXQzH_i8shPgOtYyIiqqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816786475993-kk1mtesh93lstuhefc6mfko953fn038k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
