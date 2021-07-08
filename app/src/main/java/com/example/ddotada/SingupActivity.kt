@@ -82,6 +82,7 @@ class SingupActivity : AppCompatActivity() {
             }
             else {
                 databaseReference.child("User").child("${id}").child("id").setValue("${id}")
+                databaseReference.child("User").child("${id}").child("name").setValue("${name}")
                 databaseReference.child("User").child("${id}").child("nickname").setValue("${nickname}")
                 databaseReference.child("User").child("${id}").child("phone").setValue("${phone}")
                 databaseReference.child("User").child("${id}").child("pw").setValue("${password}")
