@@ -17,7 +17,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        /*
+/*
         //해시키 얻기(카카오맵을 사용하기 위해서 해시키가 필요함 Logcat에서 Hash Key 입력하면 해당 해시키가 나옴)
         try {
              val info =
@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
          } catch (e: Exception) {
              Log.e("name not found", e.toString())
          }
-        */
+*/
 
         // 초기화(사용할것들은 항상 필수로 매칭을 해줘야함)
         val btn_login = findViewById<ImageButton>(R.id.btn_login)
@@ -56,8 +56,13 @@ class LoginActivity : AppCompatActivity() {
             id = input_id.text.toString()
             pw = input_pw.text.toString()
 
-            id_check = databaseReference.child("User").child("${id}").key.toString()
-            pw_check = databaseReference.child("User").child("${id}").child("pw").key.toString()
+            try {
+                id_check = databaseReference.child("User").child("${id}").key.toString()
+                pw_check = databaseReference.child("User").child("${id}").child("pw").key.toString()
+            } catch (e:Exception){
+
+            }
+
         }
 
 
