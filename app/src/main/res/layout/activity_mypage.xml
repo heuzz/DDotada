@@ -6,4 +6,143 @@
     android:layout_height="match_parent"
     tools:context=".MypageActivity">
 
+    <TextView
+        android:id="@+id/text_mypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="MY PAGE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="360dp" />
+
+    <ImageButton
+        android:id="@+id/btn_mypage_profile"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_mypage_profile" />
+
+    <ImageButton
+        android:id="@+id/btn_mypage_mybike"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mypage_profile"
+        app:srcCompat="@drawable/btn_mypage_mybike" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="216dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mypage"
+        app:srcCompat="@drawable/mypage_profile_image" />
+
+    <ImageButton
+        android:id="@+id/btn_mypage_card"
+        android:layout_width="50dp"
+        android:layout_height="150dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mypage_mybike"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mypage_mybike"
+        app:srcCompat="@drawable/btn_mypage_card" />
+
+    <TextView
+        android:id="@+id/text_mypage_name"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="이름"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/text_mypage_nickname"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="닉네임"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mypage_name" />
+
+    <TextView
+        android:id="@+id/text_mypage_id"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="아이디"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_mypage_nickname" />
+
+    <ImageButton
+        android:id="@+id/mypage_personal_information"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="68dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mypage_card"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_id"
+        app:srcCompat="@drawable/btn_mypage_personal_information" />
+
+    <ImageView
+        android:id="@+id/mypage_name"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/text_mypage_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/mypage_name" />
+
+    <ImageView
+        android:id="@+id/mypage_nickname"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/text_mypage_nickname"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_name"
+        app:srcCompat="@drawable/mypage_name" />
+
+    <ImageView
+        android:id="@+id/mypage_id"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/text_mypage_id"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_nickname"
+        app:srcCompat="@drawable/mypage_name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
