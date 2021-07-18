@@ -59,6 +59,15 @@ class LoginActivity : AppCompatActivity() {
             try {
                 id_check = databaseReference.child("User").child("${id}").key.toString()
                 pw_check = databaseReference.child("User").child("${id}").child("pw").key.toString()
+                if(id == id_check && pw == pw_check){
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                }else {
+                    when{
+
+                    }
+                }
+
             } catch (e:Exception){
 
             }
