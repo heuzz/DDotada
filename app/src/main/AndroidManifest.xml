@@ -12,17 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".BikeregistActivity">
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="e1b8a1614a0a6f8b5f7d5dcd3b995a08"/>
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BikeregistActivity">
+
+        </activity>
         <activity android:name=".MypageActivity" />
         <activity android:name=".SingupActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
         <activity android:name=".MenuscreenActivity" />
     </application>
 

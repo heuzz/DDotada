@@ -1,12 +1,16 @@
 package com.example.ddotada
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Base64
+import android.util.Log
 import android.widget.EditText
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.security.MessageDigest
 
 class LoginActivity : AppCompatActivity() {
     // 파이어베이스 사용
@@ -17,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-/*
+
         //해시키 얻기(카카오맵을 사용하기 위해서 해시키가 필요함 Logcat에서 Hash Key 입력하면 해당 해시키가 나옴)
         try {
              val info =
@@ -34,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
          } catch (e: Exception) {
              Log.e("name not found", e.toString())
          }
-*/
+
 
         // 초기화(사용할것들은 항상 필수로 매칭을 해줘야함)
         val btn_login = findViewById<ImageButton>(R.id.btn_login)
