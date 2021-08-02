@@ -12,9 +12,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
-        <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="e1b8a1614a0a6f8b5f7d5dcd3b995a08"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -32,6 +29,10 @@
 
         </activity>
         <activity android:name=".MenuscreenActivity" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="289ed7b47c96c63ccf2cc2109d9118a4"/>
     </application>
 
 </manifest>
