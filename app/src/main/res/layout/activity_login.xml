@@ -86,25 +86,14 @@
         app:layout_constraintTop_toBottomOf="@+id/login_btn_login"
         app:srcCompat="@drawable/login_btn_signup" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="57dp"
-        android:text="E-NEBA"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/login_login"
         android:layout_width="217dp"
         android:layout_height="98dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="122dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/login_background"
         app:srcCompat="@drawable/login_login" />
 
     <ImageView
