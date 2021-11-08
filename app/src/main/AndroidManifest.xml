@@ -12,30 +12,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
-        <activity
-            android:name=".precaution_before_starting3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".precaution_before_starting2"
-            android:exported="false" />
-        <activity
-            android:name=".precaution_before_starting1"
-            android:exported="false" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BikeregistActivity" />
-        <activity android:name=".MypageActivity" />
-        <activity android:name=".SingupActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MenuscreenActivity" />
+
+        <activity android:name=".precaution_before_starting3" >
+
+        </activity>
+
+        <activity android:name=".precaution_before_starting2" >
+
+        </activity>
+
+        <activity android:name=".precaution_before_starting1" >
+
+        </activity>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".BikeregistActivity" >
+
+        </activity>
+
+        <activity android:name=".MypageActivity" >
+
+        </activity>
+
+        <activity android:name=".SingupActivity" >
+
+        </activity>
+
+        <activity android:name=".LoginActivity" >
+
+        </activity>
+
+        <activity android:name=".MenuscreenActivity" >
+
+        </activity>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"

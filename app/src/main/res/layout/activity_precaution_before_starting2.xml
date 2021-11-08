@@ -59,7 +59,7 @@
         app:srcCompat="@drawable/precaution_before_starting1_view2" />
 
     <ImageButton
-        android:id="@+id/precaution_before_starting2_btn_view4"
+        android:id="@+id/precaution_before_starting2_btn_next"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
