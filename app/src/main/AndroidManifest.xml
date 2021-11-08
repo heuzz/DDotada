@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ddotada">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
-
+        <activity
+            android:name=".precaution_before_starting3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".precaution_before_starting2"
+            android:exported="false" />
+        <activity
+            android:name=".precaution_before_starting1"
+            android:exported="false" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,19 +31,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BikeregistActivity">
-
-        </activity>
+        <activity android:name=".BikeregistActivity" />
         <activity android:name=".MypageActivity" />
         <activity android:name=".SingupActivity" />
-        <activity android:name=".LoginActivity">
-
-        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MenuscreenActivity" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
-            android:value="289ed7b47c96c63ccf2cc2109d9118a4"/>
+            android:value="289ed7b47c96c63ccf2cc2109d9118a4" />
     </application>
 
 </manifest>
