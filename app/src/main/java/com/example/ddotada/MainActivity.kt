@@ -11,7 +11,7 @@ import net.daum.mf.map.api.MapPoint
 import net.daum.mf.map.api.MapView
 import java.security.MessageDigest
 
-// 카카오 맵 띄우고 제일 기본적인 화면을 만들 곳
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +37,6 @@ class MainActivity : AppCompatActivity() {
         val mapViewContainer = map_view
         mapViewContainer.addView(mapView)
     }
-
 }
+
+

@@ -7,43 +7,44 @@
 
     <ImageView
         android:id="@+id/precaution_before_starting2_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="409dp"
+        android:layout_height="441dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/precaution_before_starting2_background" />
-
-    <ImageView
-        android:id="@+id/precaution_before_starting2_information1"
-        android:layout_width="0dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/precaution_before_starting2_background" />
+
+    <ImageView
+        android:id="@+id/precaution_before_starting2_information1"
+        android:layout_width="362dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precaution_before_starting2_background"
         app:srcCompat="@drawable/precaution_before_starting2_information1" />
 
     <ImageView
         android:id="@+id/precaution_before_starting2_view1"
         android:layout_width="50dp"
         android:layout_height="60dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="439dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/precaution_before_starting2_information1"
+        app:layout_constraintTop_toTopOf="@+id/precaution_before_starting2_view2"
         app:srcCompat="@drawable/precaution_before_starting2_view1" />
 
     <ImageView
         android:id="@+id/precaution_before_starting2_view2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@+id/precaution_before_starting2_view1"
         app:layout_constraintTop_toBottomOf="@+id/precaution_before_starting2_information1"
         app:srcCompat="@drawable/precaution_before_starting2_view3" />
@@ -52,8 +53,8 @@
         android:id="@+id/precaution_before_starting2_view3"
         android:layout_width="50dp"
         android:layout_height="60dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@+id/precaution_before_starting2_view2"
         app:layout_constraintTop_toBottomOf="@+id/precaution_before_starting2_information1"
         app:srcCompat="@drawable/precaution_before_starting1_view2" />
@@ -62,8 +63,8 @@
         android:id="@+id/precaution_before_starting2_btn_next"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="448dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/precaution_before_starting2_view3"
