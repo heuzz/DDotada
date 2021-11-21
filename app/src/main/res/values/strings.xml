@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">또타다</string>
+    <string name="app_ri">자전거 운행 종료 또는 내 자전거 이용 완료 시</string>
+    <string name="app_ro">등록 된 카트로 자동 결제됩니다.</string>등록 된 카트로 자동 결제됩니다.
 </resources>

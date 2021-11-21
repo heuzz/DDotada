@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val btn = findViewById<Button>(R.id.button5)
         btn.setOnClickListener {
-            main_drawer_layout
+
         }
 
     }
