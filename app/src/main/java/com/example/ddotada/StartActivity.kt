@@ -12,7 +12,7 @@ class StartActivity : AppCompatActivity() {
         startLoading()
     }
 
-    private fun startLoading() {  // 딜레이주고 메인 엑티비티로 넘어가기
+    private fun startLoading() {  // 딜레이주고 메인 엑티비티로 넘어가기 여기서 조건 주어서 처음 접속이면 스타팅 화면1 로
         val handler = Handler()
         handler.postDelayed({
             val intent = Intent(baseContext, precaution_before_starting1::class.java)

@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
         // 초기화(사용할것들은 항상 필수로 매칭을 해줘야함)
         val btn_login = findViewById<ImageButton>(R.id.login_btn_login)
-        val btn_signup = findViewById<ImageButton>(R.id.login_btn_signup)
+        val btn_signup = findViewById<ImageButton>(R.id.login_btn_lsignup)
         val input_id = findViewById<EditText>(R.id.login_intput_id)
         val input_pw = findViewById<EditText>(R.id.login_input_pw)
         var id:String = ""
@@ -59,17 +59,24 @@ class LoginActivity : AppCompatActivity() {
         btn_login.setOnClickListener {
             id = input_id.text.toString()
             pw = input_pw.text.toString()
-
+            var pw_check = ""
             try {
                 id_check = databaseReference.child("User").child("${id}").key.toString()
-                pw_check = databaseReference.child("User").child("${id}").child("pw").key.toString()
-                if(id == id_check && pw == pw_check){
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-                }else {
-                    when{
-
+                databaseReference.child("User").child("${id}").child("pw").get().addOnSuccessListener{
+                    pw_check = it.value.toString()
+                    if(id == id_check && pw == pw_check){
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                    }else {
+                        Log.d("logintest","로그인실패")
+                        Log.d("id",id)
+                        Log.d("idcheck",id_check)
+                        Log.d("pw",pw)
+                        Log.d("id",pw_check)
                     }
+
+                }.addOnFailureListener {
+                    Log.d("fail","비번 못가져옴")
                 }
 
             } catch (e:Exception){
