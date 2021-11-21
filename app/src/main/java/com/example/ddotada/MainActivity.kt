@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Base64
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import net.daum.mf.map.api.MapPoint
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         mapViewContainer.addView(mapView)
         mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(33.46194, 126.90892), true)
         mapView.setZoomLevel(6, true)
+
+        val btn = findViewById<Button>(R.id.button5)
+        btn.setOnClickListener {
+            main_drawer_layout
+        }
+
     }
 }
 
