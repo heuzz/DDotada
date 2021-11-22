@@ -14,7 +14,7 @@ class precaution_before_starting2 : AppCompatActivity() {
         btn_next.setOnClickListener {
             val intent = Intent(this, precaution_before_starting3::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
-            overridePendingTransition(R.anim.anim_slide_in_left,R.anim.anim_slide_out_right)
+            overridePendingTransition(R.anim.anim_slide_out_right,R.anim.anim_slide_in_left)
         }
     }
 }
