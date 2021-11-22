@@ -13,6 +13,7 @@
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_main2.xml" value="0.271484375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_menuscreen.xml" value="0.259765625" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_mypage.xml" value="0.259765625" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_navi.xml" value="0.22" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting1.xml" value="0.271484375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting2.xml" value="0.260546875" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting3.xml" value="0.271484375" />
@@ -22,10 +23,11 @@
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/precaution_before_starting1.xml" value="0.274609375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/precaution_before_starting2.xml" value="0.274609375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/precaution_before_starting3.xml" value="0.274609375" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/menu/menu_list.xml" value="0.14375" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
