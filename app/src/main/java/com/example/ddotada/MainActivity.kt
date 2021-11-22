@@ -121,6 +121,29 @@ class MainActivity : AppCompatActivity(){
             gpsmarker.selectedMarkerType = MapPOIItem.MarkerType.RedPin
             mapView.addPOIItem(gpsmarker)
         }
+
+
+        val btn_bike = findViewById<Button>(R.id.btn_mybike)
+        val btn_list = findViewById<Button>(R.id.btn_list)
+        val btn_coin = findViewById<Button>(R.id.btn_coin)
+        val btn_card = findViewById<Button>(R.id.btn_card)
+
+        btn_bike.setOnClickListener {
+            val intent = Intent(this, BikeregistActivity::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
+        btn_list.setOnClickListener {
+            val intent = Intent(this, ListActivity::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
+        btn_coin.setOnClickListener {
+            val intent = Intent(this, HoodyActivity::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
+        btn_card.setOnClickListener {
+            val intent = Intent(this, CardActivity::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
     }
 
 
