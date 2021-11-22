@@ -10,7 +10,7 @@ class precaution_before_starting2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_precaution_before_starting2)
 
-        val btn_next = findViewById<ImageButton>(R.id.precaution_before_starting2_btn_next)
+        val btn_next = findViewById<ImageButton>(R.id.btn_precaution_before_starting2_next)
         btn_next.setOnClickListener {
             val intent = Intent(this, precaution_before_starting3::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))

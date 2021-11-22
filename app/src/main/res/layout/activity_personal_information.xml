@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_personal_information_photo"
         android:layout_width="105dp"
         android:layout_height="98dp"
         android:backgroundTint="#FFFFFF"
@@ -131,7 +131,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_personal_information_photo" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -179,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/personal_information_completion"
         android:layout_width="249dp"
         android:layout_height="67dp"
         android:layout_marginBottom="16dp"
