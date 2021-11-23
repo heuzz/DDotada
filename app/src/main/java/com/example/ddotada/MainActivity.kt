@@ -6,25 +6,24 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
-import android.os.Build
 import android.os.Bundle
-import android.util.Base64
 import android.util.Log
-import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import net.daum.mf.map.api.MapPOIItem
 import net.daum.mf.map.api.MapPoint
 import net.daum.mf.map.api.MapView
-import java.security.MessageDigest
 
-val gpsmarker = MapPOIItem()
 
 class MainActivity : AppCompatActivity(){
 
@@ -33,6 +32,10 @@ class MainActivity : AppCompatActivity(){
     var REQUIRED_PERMISSIONS = arrayOf<String>(Manifest.permission.ACCESS_FINE_LOCATION)
     var uLatitude:Double = 0.0
     var uLongitude:Double = 0.0
+    val gpsmarker = MapPOIItem()
+
+    private val firebaseDatabase: FirebaseDatabase = FirebaseDatabase.getInstance()
+    private val databaseReference: DatabaseReference = firebaseDatabase.getReference()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,7 +80,7 @@ class MainActivity : AppCompatActivity(){
             drawerLayout.openDrawer((GravityCompat.START))
         }
 
-        val gps = findViewById<ImageButton>(R.id.imageButton2)
+        val gps = findViewById<ImageButton>(R.id.btn_gps)
         gps.setOnClickListener {
             if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
                 val lm: LocationManager =
@@ -91,11 +94,7 @@ class MainActivity : AppCompatActivity(){
 
                 } catch (e: NullPointerException) {
                     Log.e("LOCATION_ERROR", e.toString())
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                        ActivityCompat.finishAffinity(this)
-                    } else {
-                        ActivityCompat.finishAffinity(this)
-                    }
+                    ActivityCompat.finishAffinity(this)
 
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
@@ -120,14 +119,33 @@ class MainActivity : AppCompatActivity(){
         }
 
         val text_user = findViewById<TextView>(R.id.text_user)
+        try {
+            databaseReference.child("User").child("admin").child("nickname").get().addOnSuccessListener{
+                text_user.text = it.value.toString()
 
+            }.addOnFailureListener {
+                Log.d("fail","못가져옴")
+                text_user.text = "불러오기 실패"
+            }
+
+        }catch (e:Exception){
+
+        }
 
         val btn_bike = findViewById<Button>(R.id.btn_mybike)
         val btn_list = findViewById<Button>(R.id.btn_list)
         val btn_coin = findViewById<Button>(R.id.btn_coin)
         val btn_card = findViewById<Button>(R.id.btn_card)
         val btn_setting = findViewById<ImageButton>(R.id.btn_setting)
-
+        val btn_filter = findViewById<ImageButton>(R.id.btn_filter)
+        val filterlayout = findViewById<ConstraintLayout>(R.id.fit)
+        btn_filter.setOnClickListener {
+            if(filterlayout.isVisible == false){
+                filterlayout.visibility = View.VISIBLE
+            }else{
+                filterlayout.visibility = View.INVISIBLE
+            }
+        }
         btn_bike.setOnClickListener {
             val intent = Intent(this, BikeregistActivity::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))

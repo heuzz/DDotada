@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C6B9B9"
-    android:backgroundTint="#DDD4D4"
+    android:background="@drawable/login_background"
     tools:context=".HoodyActivity">
 
     <View
@@ -170,5 +169,17 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/hoody_coin3"
         app:srcCompat="@drawable/btn_bikeregist_photoplus" />
+
+    <ImageButton
+        android:id="@+id/btn_back2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FF0000"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
