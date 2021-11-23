@@ -47,7 +47,8 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_bikeregist_photoplus" />
+        app:srcCompat="@drawable/btn_bikeregist_photoplus"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton2"

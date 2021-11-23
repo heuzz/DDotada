@@ -65,7 +65,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="36dp"
-        android:background="#FFFEFE"
+        android:background="#00FFFEFE"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/precaution_before_starting3_view3"
         app:layout_constraintTop_toBottomOf="@+id/precaution_before_starting3_information1"

@@ -4,37 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="#FFFFFF"
+    android:background="@drawable/login_background"
     tools:context=".LoginActivity">
-
-    <ImageView
-        android:id="@+id/login_background"
-        android:layout_width="408dp"
-        android:layout_height="722dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        app:srcCompat="@drawable/login_background" />
 
     <ImageView
         android:id="@+id/login_background_box"
         android:layout_width="330dp"
-        android:layout_height="540dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginBottom="70dp"
+        android:layout_height="600dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/login_background_box" />
 
     <EditText
@@ -92,9 +74,10 @@
 
     <ImageView
         android:id="@+id/login_stay_login"
-        android:layout_width="80dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="60dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/login_btn_check_box"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
@@ -104,9 +87,9 @@
         android:id="@+id/login_btn_findid"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/login_stay_login"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
@@ -117,7 +100,7 @@
         android:layout_width="80dp"
         android:layout_height="30dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toEndOf="@+id/login_btn_findid"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
@@ -128,8 +111,8 @@
         android:layout_width="47dp"
         android:layout_height="32dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_pw"
@@ -200,15 +183,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_signup_with"
         app:srcCompat="@drawable/login_line" />
-
-    <ImageButton
-        android:id="@+id/login_back"
-        android:layout_width="64dp"
-        android:layout_height="65dp"
-        android:background="#FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_background"
-        app:srcCompat="@drawable/login_back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

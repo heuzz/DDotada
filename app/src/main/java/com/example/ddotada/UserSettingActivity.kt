@@ -1,11 +1,11 @@
 package com.example.ddotada
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class MypageActivity : AppCompatActivity() {
+class UserSettingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mypage)
+        setContentView(R.layout.activity_user_setting)
     }
 }

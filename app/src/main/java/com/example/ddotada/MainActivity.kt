@@ -12,10 +12,7 @@ import android.util.Base64
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.RelativeLayout
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -122,11 +119,14 @@ class MainActivity : AppCompatActivity(){
             mapView.addPOIItem(gpsmarker)
         }
 
+        val text_user = findViewById<TextView>(R.id.text_user)
+
 
         val btn_bike = findViewById<Button>(R.id.btn_mybike)
         val btn_list = findViewById<Button>(R.id.btn_list)
         val btn_coin = findViewById<Button>(R.id.btn_coin)
         val btn_card = findViewById<Button>(R.id.btn_card)
+        val btn_setting = findViewById<ImageButton>(R.id.btn_setting)
 
         btn_bike.setOnClickListener {
             val intent = Intent(this, BikeregistActivity::class.java)
@@ -142,6 +142,10 @@ class MainActivity : AppCompatActivity(){
         }
         btn_card.setOnClickListener {
             val intent = Intent(this, CardActivity::class.java)
+            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+        }
+        btn_setting.setOnClickListener {
+            val intent = Intent(this, UserSettingActivity::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
     }

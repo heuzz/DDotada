@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DDotada">
         <activity
+            android:name=".UserSettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListActivity"
             android:exported="false" />
         <activity android:name=".CardActivity" />
@@ -31,7 +34,6 @@
         <activity android:name=".precaution_before_starting1" />
         <activity android:name=".MainActivity" />
         <activity android:name=".BikeregistActivity" />
-        <activity android:name=".MypageActivity" />
         <activity android:name=".SingupActivity" />
         <activity android:name=".LoginActivity" />
 
