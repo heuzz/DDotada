@@ -33,26 +33,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/personal_information"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="30dp"
-        android:scaleType="centerCrop"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_user" />
-
     <Button
         android:id="@+id/btn_mybike"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#EFDAAD"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/menu_box"
         android:text="내 자전거"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btn_list"
@@ -63,11 +51,11 @@
     <Button
         android:id="@+id/btn_list"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#EFDAAD"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/menu_box"
         android:text="이용 내역"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btn_coin"
@@ -78,42 +66,54 @@
     <Button
         android:id="@+id/btn_coin"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="#EFDAAD"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/menu_box"
         android:text="후디코인"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/btn_card"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-   <Button
-       android:id="@+id/btn_card"
-       android:layout_width="0dp"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="24dp"
-       android:layout_marginEnd="24dp"
-       android:layout_marginBottom="110dp"
-       android:backgroundTint="#EFDAAD"
-       android:text="등록 카드"
-       android:textColor="#000000"
-       android:textStyle="normal"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btn_card"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/menu_box"
+        android:text="등록 카드"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_setting"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="168dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="2dp"
         android:layout_marginEnd="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/text_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_user"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:layout_constraintTop_toTopOf="@+id/text_user"
+        app:srcCompat="@drawable/setting" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_user"
+        app:srcCompat="@drawable/profile" />
 </androidx.constraintlayout.widget.ConstraintLayout>

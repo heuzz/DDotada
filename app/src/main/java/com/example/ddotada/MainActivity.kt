@@ -15,7 +15,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
-import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.firebase.database.DatabaseReference
@@ -74,7 +73,7 @@ class MainActivity : AppCompatActivity(){
         }
 
 
-        val btn = findViewById<Button>(R.id.button5)
+        val btn = findViewById<ImageButton>(R.id.btn_menu)
         drawerLayout = findViewById(R.id.main_drawer_layout)
         btn.setOnClickListener {
             drawerLayout.openDrawer((GravityCompat.START))
@@ -121,11 +120,11 @@ class MainActivity : AppCompatActivity(){
         val text_user = findViewById<TextView>(R.id.text_user)
         try {
             databaseReference.child("User").child("admin").child("nickname").get().addOnSuccessListener{
-                text_user.text = it.value.toString()
+                text_user.text = "N.Hoody"
 
             }.addOnFailureListener {
                 Log.d("fail","못가져옴")
-                text_user.text = "불러오기 실패"
+                text_user.text = "N.Hoody"
             }
 
         }catch (e:Exception){

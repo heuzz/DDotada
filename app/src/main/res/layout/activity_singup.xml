@@ -4,346 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C6ACAC"
-    android:backgroundTint="#BF9D9D"
+    android:background="@drawable/signup_back"
     tools:context=".SingupActivity">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="70dp"
-        android:background="@drawable/login_background_box"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/singup_plus" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:srcCompat="@drawable/signup_box" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#00FF0000">
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/signup_line" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="150dp"
-                android:layout_height="250dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/profile_image" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/signup_line" />
 
-            <ImageView
-                android:id="@+id/profileView"
-                android:layout_width="150dp"
-                android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:scaleType="fitCenter"
-                android:src="@drawable/profile_image"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/signup_line" />
 
-            <ImageButton
-                android:id="@+id/btn_change_profile_image"
-                android:layout_width="90dp"
-                android:layout_height="160dp"
-                android:backgroundTint="#00FFFFFF"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                app:layout_constraintEnd_toEndOf="@+id/imageView"
-                app:layout_constraintStart_toStartOf="@+id/imageView"
-                app:layout_constraintTop_toTopOf="@+id/imageView"
-                app:srcCompat="@drawable/btn_profile_image_change" />
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/signup_line" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="프로필 이미지 변경"
-                android:textColor="#000000"
-                app:layout_constraintBottom_toTopOf="@+id/btn_change_profile_image"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/imageView" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/signup_end" />
 
-            <ImageView
-                android:id="@+id/enter_nickname"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="5dp"
-                android:background="#00FFFFFF"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView"
-                app:srcCompat="@drawable/enter_nickname" />
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/singup_scr" />
 
-            <TextView
-                android:id="@+id/text_enter_nickname"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="닉네임"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/enter_nickname"
-                app:layout_constraintStart_toStartOf="@+id/enter_nickname"
-                app:layout_constraintTop_toTopOf="@+id/enter_nickname" />
-
-            <ImageView
-                android:id="@+id/name_input"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/enter_nickname"
-                app:srcCompat="@drawable/name_input" />
-
-            <TextView
-                android:id="@+id/text_name_input"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="이름"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/name_input"
-                app:layout_constraintStart_toStartOf="@+id/name_input"
-                app:layout_constraintTop_toTopOf="@+id/name_input" />
-
-            <ImageView
-                android:id="@+id/phone_number"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_input"
-                app:srcCompat="@drawable/phone_number" />
-
-            <TextView
-                android:id="@+id/text_phone_number"
-                android:layout_width="90dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="핸드폰 번호"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/phone_number"
-                app:layout_constraintStart_toStartOf="@+id/phone_number"
-                app:layout_constraintTop_toTopOf="@+id/phone_number" />
-
-            <ImageView
-                android:id="@+id/pw_input"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/id_input"
-                app:srcCompat="@drawable/pw_input" />
-
-            <TextView
-                android:id="@+id/text_pw_input"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="PW"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/pw_input"
-                app:layout_constraintStart_toStartOf="@+id/pw_input"
-                app:layout_constraintTop_toTopOf="@+id/pw_input" />
-
-            <ImageView
-                android:id="@+id/id_input"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="15dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phone_number"
-                app:srcCompat="@drawable/id_input" />
-
-            <TextView
-                android:id="@+id/text_id_input"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="ID"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/id_input"
-                app:layout_constraintStart_toStartOf="@+id/id_input"
-                app:layout_constraintTop_toTopOf="@+id/id_input"
-                app:layout_constraintVertical_bias="0.422" />
-
-            <ImageView
-                android:id="@+id/pw_enter_input"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pw_input"
-                app:srcCompat="@drawable/pw_enter_input" />
-
-            <TextView
-                android:id="@+id/text_pw_enter_input"
-                android:layout_width="79dp"
-                android:layout_height="31dp"
-                android:layout_marginStart="30dp"
-                android:text="PW 확인"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/pw_enter_input"
-                app:layout_constraintStart_toStartOf="@+id/pw_enter_input"
-                app:layout_constraintTop_toBottomOf="@+id/pw_input" />
-
-            <ImageView
-                android:id="@+id/agree_terms"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="60dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pw_enter_input"
-                app:srcCompat="@drawable/agree_terms" />
-
-            <TextView
-                android:id="@+id/text_agree_terms"
-                android:layout_width="90dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="약관 동의"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/agree_terms"
-                app:layout_constraintStart_toStartOf="@+id/agree_terms"
-                app:layout_constraintTop_toTopOf="@+id/agree_terms" />
-
-            <ImageView
-                android:id="@+id/accept_receive_notifications"
-                android:layout_width="415dp"
-                android:layout_height="75dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/agree_terms"
-                app:srcCompat="@drawable/accept_receive_notifications" />
-
-            <TextView
-                android:id="@+id/textaccept_receive_notifications"
-                android:layout_width="120dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:text="알람 수신 동의"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/accept_receive_notifications"
-                app:layout_constraintStart_toStartOf="@+id/accept_receive_notifications"
-                app:layout_constraintTop_toTopOf="@+id/accept_receive_notifications" />
-
-            <ImageButton
-                android:id="@+id/btn_signup2"
-                android:layout_width="415dp"
-                android:layout_height="80dp"
-                android:background="#00FFFFFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/accept_receive_notifications"
-                app:layout_constraintVertical_bias="0.544"
-                app:srcCompat="@drawable/btn_signup2" />
-
-            <ImageButton
-                android:id="@+id/btn_check"
-                android:layout_width="52dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="40dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="@+id/agree_terms"
-                app:layout_constraintEnd_toEndOf="@+id/agree_terms"
-                app:layout_constraintTop_toTopOf="@+id/agree_terms"
-                app:srcCompat="@drawable/btn_check" />
-
-            <ImageButton
-                android:id="@+id/btn_check2"
-                android:layout_width="52dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="40dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="@+id/accept_receive_notifications"
-                app:layout_constraintEnd_toEndOf="@+id/accept_receive_notifications"
-                app:layout_constraintTop_toTopOf="@+id/accept_receive_notifications"
-                app:srcCompat="@drawable/btn_check2" />
-
-            <EditText
-                android:id="@+id/edit_nickname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="@+id/enter_nickname"
-                app:layout_constraintStart_toEndOf="@+id/text_enter_nickname"
-                app:layout_constraintTop_toTopOf="@+id/enter_nickname"
-                app:layout_constraintVertical_bias="0.666" />
-
-            <EditText
-                android:id="@+id/edit_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="@+id/name_input"
-                app:layout_constraintStart_toEndOf="@+id/text_name_input"
-                app:layout_constraintTop_toTopOf="@+id/name_input" />
-
-            <EditText
-                android:id="@+id/edit_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="phone"
-                app:layout_constraintBottom_toBottomOf="@+id/phone_number"
-                app:layout_constraintStart_toEndOf="@+id/text_phone_number"
-                app:layout_constraintTop_toTopOf="@+id/phone_number" />
-
-            <EditText
-                android:id="@+id/edit_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                app:layout_constraintBottom_toBottomOf="@+id/id_input"
-                app:layout_constraintStart_toEndOf="@+id/text_id_input"
-                app:layout_constraintTop_toTopOf="@+id/id_input" />
-
-            <EditText
-                android:id="@+id/edit_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="@+id/pw_input"
-                app:layout_constraintStart_toEndOf="@+id/text_pw_input"
-                app:layout_constraintTop_toTopOf="@+id/pw_input" />
-
-            <EditText
-                android:id="@+id/edit_passwordcheck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="@+id/pw_enter_input"
-                app:layout_constraintStart_toEndOf="@+id/text_pw_enter_input"
-                app:layout_constraintTop_toBottomOf="@+id/pw_input" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
-
+    <ImageButton
+        android:id="@+id/btn_back5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup_backbtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
