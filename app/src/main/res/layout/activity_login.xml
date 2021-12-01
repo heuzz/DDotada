@@ -4,184 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/login_background1"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/login_background_box"
-        android:layout_width="330dp"
-        android:layout_height="600dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_background_box" />
 
     <EditText
         android:id="@+id/login_input_pw"
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintStart_toEndOf="@+id/login_pw"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_intput_id" />
 
     <EditText
         android:id="@+id/login_intput_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="64dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintStart_toEndOf="@+id/login_id"
-        app:layout_constraintTop_toBottomOf="@+id/login_login" />
-
-    <ImageView
-        android:id="@+id/login_login"
-        android:layout_width="207dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="100dp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_login" />
-
-    <ImageView
-        android:id="@+id/login_id"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_login"
-        app:srcCompat="@drawable/login_id" />
-
-    <ImageView
-        android:id="@+id/login_pw"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_id"
-        app:srcCompat="@drawable/login_pw" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/login_stay_login"
         android:layout_width="60dp"
         android:layout_height="15dp"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/login_btn_check_box"
+        app:layout_constraintEnd_toStartOf="@+id/login_btn_findid"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
         app:srcCompat="@drawable/login_stay_login" />
 
     <ImageButton
         android:id="@+id/login_btn_findid"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="3dp"
         android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/login_stay_login"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/login_btn_findpw"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
         app:srcCompat="@drawable/login_btn_findid" />
 
     <ImageButton
         android:id="@+id/login_btn_findpw"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="63dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="62dp"
         android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/login_btn_findid"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_input_pw"
         app:srcCompat="@drawable/login_btn_findpw" />
 
-    <ImageButton
-        android:id="@+id/login_btn_check_box"
-        android:layout_width="47dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_pw"
-        app:srcCompat="@drawable/login_btn_check_box" />
+    <ImageView
+        android:id="@+id/login_signupbox"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_btn_login"
+        app:layout_constraintStart_toEndOf="@+id/login_loginbox"
+        app:layout_constraintTop_toTopOf="@+id/login_btn_login"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/login_loginbox" />
 
     <ImageView
         android:id="@+id/login_loginbox"
-        android:layout_width="130dp"
+        android:layout_width="80dp"
         android:layout_height="35dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_btn_findid"
         app:srcCompat="@drawable/login_loginbox" />
 
-    <ImageView
-        android:id="@+id/login_signupbox"
-        android:layout_width="130dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintStart_toStartOf="@+id/login_background_box"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn_findid"
-        app:srcCompat="@drawable/login_signupbox" />
-
     <ImageButton
         android:id="@+id/login_btn_login"
-        android:layout_width="76dp"
-        android:layout_height="33dp"
-        android:backgroundTint="#FFFFFF"
+        android:layout_width="77dp"
+        android:layout_height="31dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/login_loginbox"
         app:layout_constraintEnd_toEndOf="@+id/login_loginbox"
         app:layout_constraintStart_toStartOf="@+id/login_loginbox"
         app:layout_constraintTop_toTopOf="@+id/login_loginbox"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/login_btn_login" />
 
     <ImageButton
-        android:id="@+id/login_btn_lsignup"
-        android:layout_width="57dp"
-        android:layout_height="32dp"
-        android:background="#FFFFFF"
+        android:id="@+id/login_btn_signup"
+        android:layout_width="77dp"
+        android:layout_height="31dp"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/login_signupbox"
+        app:layout_constraintBottom_toBottomOf="@+id/login_loginbox"
         app:layout_constraintEnd_toEndOf="@+id/login_signupbox"
         app:layout_constraintStart_toStartOf="@+id/login_signupbox"
-        app:layout_constraintTop_toTopOf="@+id/login_signupbox"
+        app:layout_constraintTop_toTopOf="@+id/login_loginbox"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/login_btn_signup" />
 
-    <TextView
-        android:id="@+id/login_signup_with"
-        android:layout_width="263dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="20dp"
-        android:text="Sign up with"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_loginbox" />
-
     <ImageView
-        android:id="@+id/login_loginline"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_signup_with"
-        app:srcCompat="@drawable/login_line" />
+        android:id="@+id/imageView5"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/login_stay_login"
+        app:layout_constraintEnd_toStartOf="@+id/login_stay_login"
+        app:layout_constraintTop_toTopOf="@+id/login_stay_login"
+        app:srcCompat="@drawable/checkbox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/drawable/background_reounding.xml" value="0.28671875" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/drawable/button_round.xml" value="0.26872586872586873" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_bikeregist.xml" value="0.274609375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_card.xml" value="0.259765625" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_hoody.xml" value="0.259765625" />
@@ -18,9 +19,9 @@
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_mypage.xml" value="0.259765625" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_navi.xml" value="0.22" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_personal_information.xml" value="0.259765625" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting1.xml" value="0.271484375" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting2.xml" value="0.260546875" />
-        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting3.xml" value="0.271484375" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting1.xml" value="0.259765625" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting2.xml" value="0.259765625" />
+        <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_precaution_before_starting3.xml" value="0.259765625" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_singup.xml" value="0.274609375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_start.xml" value="0.271484375" />
         <entry key="..\:/Users/msi/AndroidStudioProjects/DDotada/app/src/main/res/layout/activity_start_screen.xml" value="0.274609375" />

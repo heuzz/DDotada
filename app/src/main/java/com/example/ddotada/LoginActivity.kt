@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
         // 초기화(사용할것들은 항상 필수로 매칭을 해줘야함)
         val btn_login = findViewById<ImageButton>(R.id.login_btn_login)
-        val btn_signup = findViewById<ImageButton>(R.id.login_btn_lsignup)
+        val btn_signup = findViewById<ImageButton>(R.id.login_btn_signup)
         val input_id = findViewById<EditText>(R.id.login_intput_id)
         val input_pw = findViewById<EditText>(R.id.login_input_pw)
         var id:String = ""
