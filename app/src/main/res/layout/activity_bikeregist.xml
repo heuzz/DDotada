@@ -4,40 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/bike_back"
     tools:context=".BikeregistActivity">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
-        android:text="내 자전거"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26"
+        app:srcCompat="@drawable/bike_plus" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
-        android:text="My Bycicle"
-        android:textColor="#000000"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        app:srcCompat="@drawable/bike_icon" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        app:srcCompat="@drawable/bike_plus_btn" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bike_name" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup_backbtn" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="909dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -45,277 +76,210 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/bikeregist_bike_photo1"
-                android:layout_width="230dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="80dp"
-                android:background="#B1ACAC"
+                android:id="@+id/imageView29"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:scaleType="fitCenter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/bikeregist_bike_photo2"
-                android:layout_width="140dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
-                android:background="#B1ACAC"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/bikeregist_bike_photo1"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/bikeregist_bike_photo3"
-                android:layout_width="140dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="20dp"
-                android:background="#B1ACAC"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/bikeregist_bike_photo1"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_bike_photo2" />
-
-            <ImageView
-                android:id="@+id/bikeregist_bike"
-                android:layout_width="94dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="12dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/btn_bikeregist_photoplus" />
+                app:srcCompat="@drawable/big_img" />
 
-            <ImageButton
-                android:id="@+id/btn_bikeregist_bike_change"
-                android:layout_width="86dp"
-                android:layout_height="73dp"
-                android:background="#FFFFFF"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toEndOf="@+id/bikeregist_bike"
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/btn_bikeregist_photoplus" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="320dp"
-                android:text="모델명"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="32dp"
-                android:text="종류"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_model_box" />
-
-            <TextView
-                android:id="@+id/textView26"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="192dp"
-                android:layout_marginTop="32dp"
-                android:text="사용자 키"
-                android:textColor="#737070"
-                app:layout_constraintStart_toEndOf="@+id/textView25"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_time_box" />
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="172dp"
-                android:layout_marginTop="320dp"
-                android:text="구매시기"
-                android:textColor="#737070"
-                app:layout_constraintStart_toEndOf="@+id/textView23"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:srcCompat="@drawable/small_img" />
 
             <ImageView
-                android:id="@+id/bikeregist_model_box"
-                android:layout_width="123dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="1dp"
+                android:id="@+id/imageView31"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/small_img" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView23"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/modlename" />
 
             <ImageView
-                android:id="@+id/bikeregist_handle_box"
-                android:layout_width="280dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintStart_toEndOf="@+id/textView29"
-                app:layout_constraintTop_toBottomOf="@+id/textView33"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                android:id="@+id/imageView33"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/bike_base" />
 
             <ImageView
-                android:id="@+id/bikeregist_break_box"
-                android:layout_width="280dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="68dp"
+                android:id="@+id/imageView34"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintTop_toTopOf="@+id/imageView33"
+                app:srcCompat="@drawable/bike_sort" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView32"
+                app:srcCompat="@drawable/bike_base" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@drawable/bike_date" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView33"
+                app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                app:layout_constraintTop_toTopOf="@+id/imageView33"
+                app:srcCompat="@drawable/bike_sort" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="50dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView33"
+                app:srcCompat="@drawable/bike_modle1" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView38"
+                app:srcCompat="@drawable/bike_base" />
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView39"
+                app:layout_constraintEnd_toEndOf="@+id/imageView33"
+                app:layout_constraintTop_toTopOf="@+id/imageView39"
+                app:srcCompat="@drawable/bike_sort" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView38"
+                app:layout_constraintTop_toBottomOf="@+id/imageView36"
+                app:srcCompat="@drawable/bike_key" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView41"
+                app:srcCompat="@drawable/bike_base" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView42"
+                app:layout_constraintEnd_toEndOf="@+id/imageView36"
+                app:layout_constraintTop_toTopOf="@+id/imageView42"
+                app:srcCompat="@drawable/bike_sort" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="120dp"
+                android:layout_height="280dp"
                 android:layout_marginTop="20dp"
-                app:layout_constraintStart_toEndOf="@+id/textView28"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_handle_box"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView39"
+                app:srcCompat="@drawable/bike_info" />
 
             <ImageView
-                android:id="@+id/bikeregist_frame_box"
-                android:layout_width="280dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintStart_toEndOf="@+id/textView30"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_break_box"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                android:id="@+id/imageView45"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="11dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView42"
+                app:srcCompat="@drawable/bike_info2" />
 
             <ImageView
-                android:id="@+id/bikeregist_pedal_box"
-                android:layout_width="280dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginTop="24dp"
-                app:layout_constraintStart_toEndOf="@+id/textView31"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_frame_box"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                android:id="@+id/imageView48"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView51"
+                app:srcCompat="@drawable/bike_bar" />
 
             <ImageView
-                android:id="@+id/bikeregist_time_box"
-                android:layout_width="123dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="92dp"
-                android:layout_marginTop="1dp"
-                app:layout_constraintStart_toEndOf="@+id/bikeregist_model_box"
-                app:layout_constraintTop_toBottomOf="@+id/textView24"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                android:id="@+id/imageView49"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView48"
+                app:srcCompat="@drawable/bike_bar" />
 
             <ImageView
-                android:id="@+id/bikeregist_kind_box"
-                android:layout_width="123dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="2dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView25"
-                app:srcCompat="@drawable/accept_receive_notifications" />
+                android:id="@+id/imageView50"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="11dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView49"
+                app:srcCompat="@drawable/bike_bar" />
 
             <ImageView
-                android:id="@+id/bikeregist_height_box"
-                android:layout_width="123dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="92dp"
-                app:layout_constraintStart_toEndOf="@+id/bikeregist_kind_box"
-                app:layout_constraintTop_toBottomOf="@+id/textView26"
-                app:srcCompat="@drawable/accept_receive_notifications" />
-
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="20dp"
-                android:text="자전거 상태"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_kind_box" />
-
-            <TextView
-                android:id="@+id/textView28"
-                android:layout_width="62dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="20dp"
-                android:text="브레이크"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-            <TextView
-                android:id="@+id/textView29"
-                android:layout_width="62dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="24dp"
-                android:text="핸들"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView27" />
-
-            <TextView
-                android:id="@+id/textView32"
-                android:layout_width="47dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="212dp"
-                android:layout_marginTop="60dp"
-                android:text="핸들"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_height_box" />
-
-            <TextView
-                android:id="@+id/textView33"
-                android:layout_width="47dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="60dp"
-                android:text="핸들"
-                app:layout_constraintStart_toEndOf="@+id/textView32"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_height_box" />
-
-            <TextView
-                android:id="@+id/textView34"
-                android:layout_width="47dp"
-                android:layout_height="19dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="64dp"
-                android:text="핸들"
-                app:layout_constraintStart_toEndOf="@+id/textView33"
-                app:layout_constraintTop_toBottomOf="@+id/bikeregist_height_box" />
-
-            <TextView
-                android:id="@+id/textView30"
-                android:layout_width="62dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="20dp"
-                android:text="프레임"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="63dp"
-                android:layout_height="32dp"
-                android:layout_marginStart="48dp"
-                android:layout_marginTop="20dp"
-                android:text="페달"
-                android:textColor="#737070"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+                android:id="@+id/imageView51"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="11dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView45"
+                app:srcCompat="@drawable/bike_bar" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
-
-    <ImageButton
-        android:id="@+id/btn_bikeregist_change"
-        android:layout_width="63dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/accept_receive_notifications" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

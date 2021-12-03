@@ -6,10 +6,14 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
+import android.net.Uri
 import android.os.Bundle
+import android.provider.ContactsContract.PinnedPositions.pin
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.app.ActivityCompat
@@ -17,14 +21,18 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
+import net.daum.mf.map.api.CalloutBalloonAdapter
 import net.daum.mf.map.api.MapPOIItem
 import net.daum.mf.map.api.MapPoint
 import net.daum.mf.map.api.MapView
+import android.widget.TextView
+import java.util.zip.Inflater
 
 
-class MainActivity : AppCompatActivity(){
+
+//,MapView.POIItemEventListener
+class MainActivity : AppCompatActivity() {
 
     lateinit var drawerLayout: DrawerLayout
     val PERMISSIONS_REQUEST_CODE = 100
@@ -32,6 +40,8 @@ class MainActivity : AppCompatActivity(){
     var uLatitude:Double = 0.0
     var uLongitude:Double = 0.0
     val gpsmarker = MapPOIItem()
+    val marker = MapPOIItem()
+
 
     private val firebaseDatabase: FirebaseDatabase = FirebaseDatabase.getInstance()
     private val databaseReference: DatabaseReference = firebaseDatabase.getReference()
@@ -44,6 +54,7 @@ class MainActivity : AppCompatActivity(){
         val map_view = findViewById<View>(R.id.map_View) as RelativeLayout
         val mapViewContainer = map_view
         mapViewContainer.addView(mapView)
+
         val permissionCheck = ContextCompat.checkSelfPermission(
             this,
             Manifest.permission.ACCESS_FINE_LOCATION
@@ -89,15 +100,8 @@ class MainActivity : AppCompatActivity(){
                         lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)!!
                     uLatitude = userNowLocation.latitude
                     uLongitude = userNowLocation.longitude
-
-
                 } catch (e: NullPointerException) {
-                    Log.e("LOCATION_ERROR", e.toString())
-                    ActivityCompat.finishAffinity(this)
 
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                    System.exit(0)
                 }
 
             } else {
@@ -112,9 +116,35 @@ class MainActivity : AppCompatActivity(){
             gpsmarker.mapPoint = MapPoint.mapPointWithGeoCoord(uLatitude, uLongitude)
             gpsmarker.itemName= "현재위치"
             gpsmarker.tag = 0
-            gpsmarker.markerType = MapPOIItem.MarkerType.BluePin
-            gpsmarker.selectedMarkerType = MapPOIItem.MarkerType.RedPin
+            gpsmarker.markerType = MapPOIItem.MarkerType.CustomImage
+            gpsmarker.customImageResourceId = R.drawable.pins_gps
+            gpsmarker.isCustomImageAutoscale= false
+            gpsmarker.setCustomImageAnchor(0.5f,1.0f)
             mapView.addPOIItem(gpsmarker)
+        }
+
+        val btn_bikep = findViewById<ImageButton>(R.id.btn_bike)
+        btn_bikep.setOnClickListener {
+            val lm: LocationManager =
+                getSystemService(Context.LOCATION_SERVICE) as LocationManager
+            try {
+                val userNowLocation: Location =
+                    lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)!!
+                uLatitude = userNowLocation.latitude
+                uLongitude = userNowLocation.longitude
+
+
+            } catch (e: NullPointerException) {
+
+            }
+            marker.mapPoint = MapPoint.mapPointWithGeoCoord(uLatitude+0.001, uLongitude-0.0008)
+            marker.itemName= "현재위치"
+            marker.tag = 1
+            marker.markerType = MapPOIItem.MarkerType.CustomImage
+            marker.customImageResourceId = R.drawable.pins_map
+            marker.isCustomImageAutoscale= false
+            marker.setCustomImageAnchor(0.5f,1.0f)
+            mapView.addPOIItem(marker)
         }
 
         val text_user = findViewById<TextView>(R.id.text_user)
@@ -165,7 +195,17 @@ class MainActivity : AppCompatActivity(){
             val intent = Intent(this, UserSettingActivity::class.java)
             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
         }
+        val balloon : ImageView = findViewById(R.id.balloon)
+        val hiden = findViewById<Button>(R.id.hiden)
+        hiden.setOnClickListener {
+            if(balloon.isVisible == false){
+                balloon.visibility = View.VISIBLE
+            }else{
+                balloon.visibility = View.INVISIBLE
+            }
+        }
     }
+
 
 
 }

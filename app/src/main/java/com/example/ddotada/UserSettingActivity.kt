@@ -22,7 +22,7 @@ class UserSettingActivity : AppCompatActivity() {
         val text_id = findViewById<EditText>(R.id.text_id)
         val text_pw = findViewById<EditText>(R.id.text_pw)
         Log.d("suuuuuuuuu",call("name"))
-        text_nickname.setText("admin")
+        text_nickname.setText("N.Hoody")
         text_name.setText("admin")
         text_phone.setText("010-1234-1234")
         text_id.setText("admin")
